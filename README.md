@@ -21,3 +21,11 @@ Das Spiel wurde mit Fokus auf Einfachheit entwickelt!
 ## Hinweise
 - **Bekannte Schwierigkeiten:** Es gab anfängliche Herausforderungen, die Rakete bei der eingestellten Uhrzeit korrekt starten und explodieren zu lassen. Diese Probleme wurden jedoch bearbeitet und sollten in der aktuellen Version gelöst sein.
 - Dieses Spiel dient ausschließlich der Unterhaltung.
+
+## Video
+
+
+https://github.com/user-attachments/assets/67f78ada-295f-435a-abbc-d123d12803dd
+
+
+
