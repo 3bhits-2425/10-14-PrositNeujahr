@@ -5,13 +5,14 @@ Prosit - Neujahr ist ein interaktives Spiel bei dem ein Roboter die Hauptrolle s
  
 ### Features
 - **Roboter** : Der Protagonist des Spiels, der die Rakete abfeuert
-- **Timer/Uhr** : Ermöglicht das einstellen einer bestimmten Uhrzeit
+- **Timer/Uhr** : Real Time Uhr 
 - **Feuerwerk** : Ein visuelles Highlight, das Feuerwerk zu bestimmten Events explodieren lässt
  
 ## Spielanleitung
+# Planung
 1. **Uhrzeit einstellen**: Stelle eine gewünschte Uhrzeit über das Timer-Interface ein.
 2. **Starten**: Bestätige die Uhrzeit und lass den Roboter warten, bis die Zeit erreicht ist.
-3. **Feuerwerk erleben**: Sobald die eingestellte Uhrzeit erreicht wird, schießt der Roboter die Rakete ab, die in den Himmel fliegt und dort explodiert.
+3. **Feuerwerk erleben**: Sobald die eingestellte Uhrzeit erreicht wird, werden die Raketen abgefeuert, die in den Himmel fliegt und dort explodiert.
  
 ## Entwicklung
 **Entwickelt von:** Muhammed Hamzic und Semin Sabanovic
@@ -19,7 +20,7 @@ Prosit - Neujahr ist ein interaktives Spiel bei dem ein Roboter die Hauptrolle s
 Das Spiel wurde mit Fokus auf Einfachheit entwickelt!
  
 ## Hinweise
-- **Bekannte Schwierigkeiten:** Es gab anfängliche Herausforderungen, die Rakete bei der eingestellten Uhrzeit korrekt starten und explodieren zu lassen. Diese Probleme wurden jedoch bearbeitet und sollten in der aktuellen Version gelöst sein.
+- **Bekannte Schwierigkeiten:** Es gab Probleme, dass wenn der Timer die gewünschte Uhrzeit erreicht hat die Rakete startete aber nicht explodierte, sondern sich einfach aufgelöst hatte. Dieses Problem konnten wir leider in der Zeit nicht beheben und hoffen, dass wir es in Zukunft beheben werden. 
 - Dieses Spiel dient ausschließlich der Unterhaltung.
 
 ## Video
