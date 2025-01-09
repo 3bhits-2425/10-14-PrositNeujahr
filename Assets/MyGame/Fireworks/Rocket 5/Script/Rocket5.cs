@@ -1,26 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Rocket5 : MonoBehaviour
 {
+    public Rigidbody rig; 
+    public ConstantForce cf; 
+    public Transform rocketTransform; 
+    public string launchTime; 
+    public float explosionDelay = 5f; 
 
-    public Rigidbody rig;
-    public ConstantForce cf;
-    public Transform IsKinematic;
+    private bool hasLaunched = false;
+    private float launchTimestamp = 0; 
 
-    IEnumerator Start()
-
+    void Start()
     {
-        //Wait for 3 secs.
-        yield return new WaitForSeconds(3);
+        // Rakete zu Beginn deaktivieren
+        rig.isKinematic = true;
+        cf.enabled = false;
+    }
 
-        //Game object will turn off
-        GameObject.Find("MeshRenderer5").SetActive(false);
+    void Update()
+    {
+        string currentTime = System.DateTime.Now.ToString("HH:mm:ss");
 
+        if (!hasLaunched && currentTime == launchTime)
+        {
+            LaunchRocket();
+        }
+
+        if (hasLaunched && Time.time >= launchTimestamp + explosionDelay)
+        {
+            ExplodeRocket();
+        }
+    }
+
+    void LaunchRocket()
+    {
+        Debug.Log("Rakete gestartet um " + System.DateTime.Now.ToString("HH:mm:ss"));
+        rig.isKinematic = false;
+        cf.enabled = true;
+        launchTimestamp = Time.time;
+        hasLaunched = true;
+    }
+
+    void ExplodeRocket()
+    {
+        Debug.Log("Rakete explodiert!");
+        rocketTransform.localScale *= 3.0f;
         rig.isKinematic = true;
         cf.enabled = false;
 
-
+        Destroy(gameObject, 2.0f);
     }
 }
