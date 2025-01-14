@@ -7,7 +7,9 @@ public class Rocket1 : MonoBehaviour {
     public Rigidbody rig;
     public ConstantForce cf;
     public Transform IsKinematic;
+    public GameObject gm;
 
+    private bool rocketLaunched = false;
     IEnumerator Start()
 
     {
@@ -20,6 +22,12 @@ public class Rocket1 : MonoBehaviour {
         rig.isKinematic = true;
         cf.enabled = false;
 
+        rocketLaunched=true;
+        if (rocketLaunched)
+        {
+            gm.SetActive(true);
+
+        }
 
     }
 }
